@@ -4,38 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-<LinearLayout
-    android:id="@+id/layCep"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_margin="20dp"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent">
+    tools:context=".RespActivity">
 
     <TextView
+        android:id="@+id/tvResp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="INFORME O CEP:"/>
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"/>
 
-    <EditText
-        android:id="@+id/etCep"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"/>
-
-</LinearLayout>
+    <ProgressBar
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
-        android:id="@+id/btnSend"
+        android:id="@+id/btnClose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ENVIAR"
+        android:text="FECHAR"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
-        android:layout_marginBottom="32dp" />
+        android:layout_marginBottom="32dp"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
