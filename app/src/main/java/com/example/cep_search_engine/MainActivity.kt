@@ -42,7 +42,6 @@ class MainActivity : AppCompatActivity() {
 
                         } else {
                             txtResult.text =
-                                "Consumo via JSON" + "\n" +
                                         "Cep: " + CEPs.cep + "\n" +
                                         "Logradouro: " + CEPs.logradouro + "\n" +
                                         "Bairro: " + CEPs.bairro + "\n" +
